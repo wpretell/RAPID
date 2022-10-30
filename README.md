@@ -20,11 +20,8 @@ OBJETIVOS ESPECÍFICOS
 • Modelado de BD y manejo de SQL Server
 • Uso de Librerías para mensajería
 
-• Requerimientos:
+REQUERIMIENTOS:
 • Usar Bootstrap para el diseño de interfaces
 • Crear servicios con visual C#
 • Crear la BD en SQL server y usar Stores Procedures para toda operación con la base de datos
-• Entregables
-1. Código Fuente del Proyecto en Git Hub
-2. Readme con indicaciones para el despliegue
 
