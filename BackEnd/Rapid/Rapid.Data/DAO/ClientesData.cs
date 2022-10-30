@@ -6,7 +6,7 @@ namespace Rapid.Data.DAO
 {
     public class ClientesData
     {
-        public List<Cliente> ListarClientes()
+        public static List<Cliente> ListarClientes()
         {
             var lista = new List<Cliente>();
             try
@@ -42,7 +42,7 @@ namespace Rapid.Data.DAO
             return lista;
         }
 
-        public Cliente ListarCliente(int IdCliente)
+        public static Cliente ListarCliente(int IdCliente)
         {
             string cadenaConexion = "Data Source=MORALES\\SQL2012;DataBase=BD_Empresa;Integrated Security=true";
             SqlConnection cn = new SqlConnection(cadenaConexion);
@@ -66,7 +66,7 @@ namespace Rapid.Data.DAO
             return oCliente;
         }
 
-        public string AgregarCliente(Cliente entidad)
+        public static string AgregarCliente(Cliente entidad)
         {
             string cadenaConexion = "Data Source=MORALES\\SQL2012;DataBase=BD_Empresa;Integrated Security=true";
             SqlConnection cn = new SqlConnection(cadenaConexion);
@@ -84,7 +84,7 @@ namespace Rapid.Data.DAO
 
         }
 
-        public string ModificarCliente(Cliente entidad)
+        public static string ModificarCliente(Cliente entidad)
         {
             string cadenaConexion = "Data Source=MORALES\\SQL2012;DataBase=BD_Empresa;Integrated Security=true";
             SqlConnection cn = new SqlConnection(cadenaConexion);
@@ -102,7 +102,7 @@ namespace Rapid.Data.DAO
 
         }
 
-        public string EliminarCliente(int IdCliente)
+        public static string EliminarCliente(int IdCliente)
         {
             string cadenaConexion = "Data Source=MORALES\\SQL2012;DataBase=BD_Empresa;Integrated Security=true";
             SqlConnection cn = new SqlConnection(cadenaConexion);
@@ -116,7 +116,7 @@ namespace Rapid.Data.DAO
 
         }
 
-        public List<Direccion> ListarDirecciones(int IdCliente)
+        public static List<Direccion> ListarDirecciones(int IdCliente)
         {
             var lista = new List<Direccion>();
             string cadenaConexion = "Data Source=MORALES\\SQL2012;DataBase=BD_Empresa;Integrated Security=true";
@@ -140,7 +140,7 @@ namespace Rapid.Data.DAO
             return lista;
         }
 
-        public string AgregarDireccion(Direccion entidad)
+        public static string AgregarDireccion(Direccion entidad)
         {
             string cadenaConexion = "Data Source=MORALES\\SQL2012;DataBase=BD_Empresa;Integrated Security=true";
             SqlConnection cn = new SqlConnection(cadenaConexion);
@@ -155,7 +155,7 @@ namespace Rapid.Data.DAO
 
         }
 
-        public string ModificarDireccion(Direccion entidad)
+        public static string ModificarDireccion(Direccion entidad)
         {
             string cadenaConexion = "Data Source=MORALES\\SQL2012;DataBase=BD_Empresa;Integrated Security=true";
             SqlConnection cn = new SqlConnection(cadenaConexion);
@@ -172,7 +172,7 @@ namespace Rapid.Data.DAO
 
         }
 
-        public string EliminarDireccion(Direccion entidad)
+        public static string EliminarDireccion(Direccion entidad)
         {
             string cadenaConexion = "Data Source=MORALES\\SQL2012;DataBase=BD_Empresa;Integrated Security=true";
             SqlConnection cn = new SqlConnection(cadenaConexion);
