@@ -11,7 +11,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
+    <ProjectReference Include="..\Rapid.Data\Rapid.Data.csproj" />
+    <ProjectReference Include="..\Rapid.Entities\Rapid.Entities.csproj" />
   </ItemGroup>
 
 </Project>
