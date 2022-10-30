@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Rapid.Data.DAO;
+using Rapid.Domain.Services;
 using Rapid.Entities.Models;
 
 namespace Rapid.WebAPI.Controllers
@@ -12,8 +12,8 @@ namespace Rapid.WebAPI.Controllers
         [HttpGet("ListarVendedores")]
         public List<Vendedor> ListarVendedores()
         {
-            var oVendedoresData = new VendedoresData();
-            return oVendedoresData.ListarVendedores();
+            var oVendedoresService = new VendedoresService();
+            return oVendedoresService.ListarVendedores();
         }
     }
 }

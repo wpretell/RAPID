@@ -37,5 +37,30 @@ namespace Rapid.Domain.Services
             return ClientesData.EliminarCliente(IdCliente);
 
         }
+
+        public List<Direccion> ListarDirecciones(int IdDireccion)
+        {
+            return ClientesData.ListarDirecciones(IdDireccion);
+        }
+
+        public string AgregarDireccion(Direccion entidad)
+        {
+            return ClientesData.AgregarDireccion(entidad);
+
+        }
+
+        public string ModificarDireccion(Direccion entidad)
+        {
+            return ClientesData.ModificarDireccion(entidad);
+
+        }
+
+        public string EliminarDireccion(Direccion entidad)
+        {
+            return ClientesData.EliminarDireccion(entidad);
+
+        }
+
+
     }
 }

@@ -16,7 +16,7 @@ namespace Rapid.WebAPI.Controllers
             return oClientesService.ListarClientes();
         }
 
-        [HttpPost("ListarCliente")]
+        [HttpGet("ListarCliente")]
         public Cliente ListarCliente([FromBody] int IdCliente)
         {
             var oClientesService = new ClientesService();
@@ -42,6 +42,34 @@ namespace Rapid.WebAPI.Controllers
         {
             var oClientesService = new ClientesService();
             return oClientesService.EliminarCliente(IdCliente);
+        }
+
+        [HttpGet("ListarDirecciones")]
+        public List<Direccion> ListarDirecciones([FromBody] int IdDireccion)
+        {
+            var oClientesService = new ClientesService();
+            return oClientesService.ListarDirecciones(IdDireccion);
+        }
+
+        [HttpPost("AgregarDireccion")]
+        public string AgregarDireccion([FromBody] Direccion entidad)
+        {
+            var oClientesService = new ClientesService();
+            return oClientesService.AgregarDireccion(entidad);
+        }
+
+        [HttpPut("ModificarCliente")]
+        public string ModificarDireccion([FromBody] Direccion entidad)
+        {
+            var oClientesService = new ClientesService();
+            return oClientesService.ModificarDireccion(entidad);
+        }
+
+        [HttpDelete("EliminarCliente")]
+        public string EliminarDireccion([FromBody] Direccion entidad)
+        {
+            var oClientesService = new ClientesService();
+            return oClientesService.EliminarDireccion(entidad);
         }
 
 

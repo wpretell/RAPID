@@ -6,7 +6,7 @@ namespace Rapid.Data.DAO
 {
     public class VendedoresData
     {
-        public List<Vendedor> ListarVendedores()
+        public static List<Vendedor> ListarVendedores()
         {
             var lista = new List<Vendedor>();
             string cadenaConexion = "Data Source=MORALES\\SQL2012;DataBase=BD_Empresa;Integrated Security=true";
